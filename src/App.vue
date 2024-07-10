@@ -21,7 +21,6 @@ import { RouterLink, RouterView } from 'vue-router'
     display: flex;
     width: 100%;
     min-height: 600px;
-    background-color: yellow;
   }
 }
 </style>

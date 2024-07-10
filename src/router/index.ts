@@ -8,11 +8,11 @@ export default createRouter({
     {
       path: '/management',
       component: () => import('@/pages/index.vue'),
-      children: [
-        // {
-        //     path:'register',
-        //     component:() => import("@/pages/management/register/index.vue")
-        // },
+      children:[
+        {
+            path:'caseManagement',
+            component:() => import("@/pages/prescribe/index.vue")
+        },
         // {
         //     path:'detail',
         //     component:() => import("@/pages/hospital/detail/index.vue")
@@ -29,7 +29,8 @@ export default createRouter({
         //     path:'search',
         //     component:() => import("@/pages/hospital/search/index.vue")
         // }
-      ]
+    ]
+
     },
     {
       path: '/',
