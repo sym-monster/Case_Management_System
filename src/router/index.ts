@@ -34,7 +34,7 @@ export default createRouter({
     },
     {
       path: '/',
-      redirect: '/management'
+      redirect: '/management/caseManagement'
     }
   ],
   // 滚动行为:控制滚动条的位置
