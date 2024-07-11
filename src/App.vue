@@ -18,9 +18,10 @@ import { RouterLink, RouterView } from 'vue-router'
   flex-direction: column;
   justify-content: space-between;
   .content {
+    margin-top: 80px;
     display: flex;
     width: 100%;
-    min-height: 600px;
+    min-height: 800px;
   }
 }
 </style>

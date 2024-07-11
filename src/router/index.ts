@@ -10,31 +10,27 @@ export default createRouter({
       component: () => import('@/pages/index.vue'),
       children:[
         {
-            path:'caseManagement',
+            path:'prescribe',
             component:() => import("@/pages/prescribe/index.vue")
         },
-        // {
-        //     path:'detail',
-        //     component:() => import("@/pages/hospital/detail/index.vue")
-        // },
-        // {
-        //     path:'notice',
-        //     component:() => import("@/pages/hospital/notice/index.vue")
-        // },
-        // {
-        //     path:'close',
-        //     component:() => import("@/pages/hospital/close/index.vue")
-        // },
-        // {
-        //     path:'search',
-        //     component:() => import("@/pages/hospital/search/index.vue")
-        // }
+        {
+            path:'caseManagement',
+            component:() => import("@/pages/caseManagement/index.vue")
+        },
+        {
+            path:'addPrescription',
+            component:() => import("@/pages/addPrescription/index.vue")
+          },
+        {
+            path:'prescribeManagement',
+            component:() => import("@/pages/prescribeManagement/index.vue")
+        }
     ]
 
     },
     {
       path: '/',
-      redirect: '/management/caseManagement'
+      redirect: '/management/prescribe'
     }
   ],
   // 滚动行为:控制滚动条的位置

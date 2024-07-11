@@ -5,19 +5,19 @@
         :default-active="$route.path"
         class="el-menu-vertical-demo"
       >
-        <el-menu-item index="/management/caseManagement" @click="changeActive('/management/caseManagement')">
+        <el-menu-item index="/management/prescribe" @click="changeActive('/management/prescribe')">
             <el-icon><HotWater /></el-icon>
             <span>开处方</span>
         </el-menu-item>
-        <el-menu-item index="2">
+        <el-menu-item index="/management/caseManagement" @click="changeActive('/management/caseManagement')">
           <el-icon><Memo /></el-icon>
           <span>病历管理</span>
         </el-menu-item>
-        <el-menu-item index="3">
+        <el-menu-item index="/management/addPrescription" @click="changeActive('/management/addPrescription')">
           <el-icon><CirclePlus /></el-icon>
           <span>添加处方</span>
         </el-menu-item>
-        <el-menu-item index="4">
+        <el-menu-item index="/management/prescribeManagement" @click="changeActive('/management/prescribeManagement')">
           <el-icon><Tickets /></el-icon>
           <span>处方管理</span>
         </el-menu-item>
@@ -53,7 +53,6 @@ const changeActive = (path:string)=>{
   display:flex;
   justify-content: space-between;
   .menu{
-    background-color:aqua;
     flex: 2;
     span{
       font-size: 20px;
