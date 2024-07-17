@@ -7,8 +7,8 @@
       <el-table-column prop="delivery" label="是否首次就诊"  width="200px"/>
       <el-table-column label="操作" width="100px" >
       <template #default="{ row }">
-        <el-button type="text" @click="viewDetails(row)">查看</el-button>
-        <el-button type="text" @click="viewDetails(row)">删除</el-button>
+        <el-button link @click="viewDetails(row)">查看</el-button>
+        <el-button link @click="viewDetails(row)">删除</el-button>
       </template>
     </el-table-column>
     </el-table>
